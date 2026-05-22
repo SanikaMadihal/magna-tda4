@@ -1,0 +1,37 @@
+# Python environments and caches
+venv/
+__pycache__/
+
+# Dataset and local artifacts
+imagenet_val/
+artifacts/
+logs/
+err.txt
+clippy.json
+clippy.txt
+doc_out.txt
+
+# Middleware build outputs and generated local checks
+middleware/target/
+middleware/magna_server_mobilenet
+middleware/check*.txt
+middleware/check_out*.txt
+middleware/check_utf8*.txt
+middleware/check_out_msvc*.txt
+middleware/clippy.json
+middleware/clippy.txt
+middleware/doc_out.txt
+imx477_links.txt
+modules.txt
+sample.jpg
+implementation_plan.md.resolved
+# Large generated model artifacts
+*.log
+*.onnx
+*.engine
+*.plan
+*.so
+scripts/data_prep/
+scripts/debug/
+
+target

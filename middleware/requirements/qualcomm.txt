@@ -1,0 +1,30 @@
+# =============================================================================
+# Magna Middleware — Qualcomm Platform Requirements
+# =============================================================================
+# These must be present on the target Qualcomm device before building with
+# --features qualcomm
+#
+# Checked by: magna create_middleware --hw QUALCOMM|SNAPDRAGON
+
+# Qualcomm Neural Network SDK (QNN >= 2.10)
+qnn-sdk >= 2.10
+
+# SNPE (Snapdragon Neural Processing Engine >= 2.x)
+snpe >= 2.0
+
+# Hexagon SDK (for DSP offload)
+hexagon-sdk >= 4.0
+
+# ONNX Runtime QNN Execution Provider
+onnxruntime-qnn >= 1.16
+
+# System libraries
+libQnnHtp.so
+libQnnCpu.so
+libSNPE.so
+
+# RPCMem (for zero-copy DSP memory)
+librpcmem.so
+
+# Android NDK (if cross-compiling for Snapdragon mobile)
+# android-ndk >= r25

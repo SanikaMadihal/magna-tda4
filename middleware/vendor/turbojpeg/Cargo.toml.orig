@@ -1,0 +1,46 @@
+[package]
+name = "turbojpeg"
+version = "1.4.0"
+edition = "2021"
+resolver = "2"
+
+authors = ["Jan Špaček <patek.mail@gmail.com>"]
+homepage = "https://github.com/honzasp/rust-turbojpeg"
+repository = "https://github.com/honzasp/rust-turbojpeg"
+documentation = "https://docs.rs/turbojpeg"
+license = "Unlicense OR MIT"
+readme = "README.md"
+
+keywords = ["jpeg", "image", "decoder", "encoder", "transform"]
+categories = ["compression", "api-bindings", "multimedia::images"]
+description = "Fast and easy JPEG encoding, decoding and lossless transforms with TurboJPEG"
+
+[lib]
+doctest = true
+
+[dependencies]
+gcd = "2.3.0"
+image = {version = ">= 0.24, < 0.26", optional = true, default-features = false}
+libc = "^0.2"
+thiserror = "^1.0"
+turbojpeg-sys = {version = "^1.1.1", default-features = false, path = "./turbojpeg-sys"}
+
+[dev-dependencies]
+anyhow = {version = "1.0"}
+image = {version = "^0.24", features = ["jpeg", "png", "bmp", "pnm"]}
+clap = "2.33"
+
+[features]
+bindgen = ["turbojpeg-sys/bindgen"]
+cmake = ["turbojpeg-sys/cmake"]
+pkg-config = ["turbojpeg-sys/pkg-config"]
+require-simd = ["turbojpeg-sys/require-simd"]
+default = ["cmake", "pkg-config", "require-simd"]
+
+[[example]]
+name = "image"
+required-features = ["image"]
+
+[package.metadata.docs.rs]
+features = ["image"]
+rustc-args = ["--cfg", "docsrs"]

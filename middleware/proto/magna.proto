@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package magna;
+
+// =============================================================================
+// Magna Middleware — gRPC Inference Service
+// =============================================================================
+
+service InferenceService {
+    // Run inference on an image and return raw output tensor + optional labels.
+    rpc Infer (InferenceRequest) returns (InferenceResponse) {}
+
+    // Health check / readiness probe.
+    rpc HealthCheck (HealthRequest) returns (HealthResponse) {}
+}
+
+// ---------------------------------------------------------------------------
+// Request
+// ---------------------------------------------------------------------------
+
+message InferenceRequest {
+    repeated InferInputTensor inputs = 1;
+    string model_name = 2;
+}
+
+message InferInputTensor {
+    string name = 1;
+    string datatype = 2;
+    repeated int64 shape = 3;
+    bytes raw_data = 4;
+}
+
+// ---------------------------------------------------------------------------
+// Response
+// ---------------------------------------------------------------------------
+
+message InferenceResponse {
+    repeated InferOutputTensor outputs = 1;
+    float inference_time_ms = 2;
+}
+
+message InferOutputTensor {
+    string name = 1;
+    string datatype = 2;
+    repeated int64 shape = 3;
+    bytes raw_data = 4;
+}
+
+// ---------------------------------------------------------------------------
+// Health Check
+// ---------------------------------------------------------------------------
+
+message HealthRequest {}
+
+message HealthResponse {
+    bool ready = 1;
+    string state = 2;
+    string backend = 3;
+    string model_name = 4;
+    uint64 inference_count = 5;
+}
