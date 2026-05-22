@@ -34,4 +34,5 @@ implementation_plan.md.resolved
 scripts/data_prep/
 scripts/debug/
 
-target
+targetmodels/
+.github/

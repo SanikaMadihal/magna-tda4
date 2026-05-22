@@ -1,0 +1,12 @@
+/home/sanika/mi-isal-main/target/aarch64-unknown-linux-gnu/release/deps/fax-a1de191601d01aa3.d: /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/lib.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/maps.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/decoder.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/encoder.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/tiff.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/bitmaps.rs
+
+/home/sanika/mi-isal-main/target/aarch64-unknown-linux-gnu/release/deps/libfax-a1de191601d01aa3.rlib: /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/lib.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/maps.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/decoder.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/encoder.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/tiff.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/bitmaps.rs
+
+/home/sanika/mi-isal-main/target/aarch64-unknown-linux-gnu/release/deps/libfax-a1de191601d01aa3.rmeta: /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/lib.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/maps.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/decoder.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/encoder.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/tiff.rs /home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/bitmaps.rs
+
+/home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/lib.rs:
+/home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/maps.rs:
+/home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/decoder.rs:
+/home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/encoder.rs:
+/home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/tiff.rs:
+/home/sanika/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fax-0.2.7/src/bitmaps.rs:

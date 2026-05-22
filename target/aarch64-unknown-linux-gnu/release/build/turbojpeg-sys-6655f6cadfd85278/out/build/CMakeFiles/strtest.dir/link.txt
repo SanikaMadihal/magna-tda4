@@ -1,0 +1,1 @@
+/usr/bin/aarch64-linux-gnu-gcc  -ffunction-sections -fdata-sections -fPIC -w -O3 -DNDEBUG CMakeFiles/strtest.dir/src/strtest.c.o -o strtest 

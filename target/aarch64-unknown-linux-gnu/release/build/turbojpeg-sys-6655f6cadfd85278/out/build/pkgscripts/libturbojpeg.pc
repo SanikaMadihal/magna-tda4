@@ -1,0 +1,10 @@
+prefix=/home/sanika/mi-isal-main/target/aarch64-unknown-linux-gnu/release/build/turbojpeg-sys-6655f6cadfd85278/out
+exec_prefix=/home/sanika/mi-isal-main/target/aarch64-unknown-linux-gnu/release/build/turbojpeg-sys-6655f6cadfd85278/out
+libdir=/home/sanika/mi-isal-main/target/aarch64-unknown-linux-gnu/release/build/turbojpeg-sys-6655f6cadfd85278/out/lib
+includedir=/home/sanika/mi-isal-main/target/aarch64-unknown-linux-gnu/release/build/turbojpeg-sys-6655f6cadfd85278/out/include
+
+Name: libturbojpeg
+Description: A SIMD-accelerated JPEG codec that provides the TurboJPEG API
+Version: 3.1.0
+Libs: -L${libdir} -lturbojpeg
+Cflags: -I${includedir}

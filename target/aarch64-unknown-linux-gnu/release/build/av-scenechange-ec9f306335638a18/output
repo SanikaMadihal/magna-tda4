@@ -1,0 +1,3 @@
+cargo:rustc-env=PROFILE=release
+cargo:rustc-env=CARGO_CFG_TARGET_FEATURE=neon
+cargo:rustc-env=CARGO_ENCODED_RUSTFLAGS=-L/home/sanika/tda4-sysroot/usr/lib-Clink-arg=-Wl,-rpath-link,/home/sanika/tda4-sysroot/usr/lib-Clink-arg=-Wl,--allow-shlib-undefined

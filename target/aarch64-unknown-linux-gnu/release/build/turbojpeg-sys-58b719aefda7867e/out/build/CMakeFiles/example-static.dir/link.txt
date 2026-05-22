@@ -1,0 +1,1 @@
+/usr/bin/aarch64-linux-gnu-gcc-12  -ffunction-sections -fdata-sections -fPIC -w -O3 -DNDEBUG CMakeFiles/example-static.dir/src/example.c.o -o example-static  libjpeg.a 
